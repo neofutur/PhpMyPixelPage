@@ -1,0 +1,12 @@
+AuthUserFile ./.htpasswd
+
+AuthName "pixeladmin"
+
+AuthType Basic
+
+<Files "./admin.php">
+
+ require valid-user
+
+</Files>
+
