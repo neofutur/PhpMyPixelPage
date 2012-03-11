@@ -1,7 +1,7 @@
 <?php
  require_once 'header.php';
 
- $id_site=mysql_real_escape_string($_GET['site']);
+ if ( isset ( $_GET['site'] ) ) $id_site=mysql_real_escape_string($_GET['site']); else $id_site="";
 
  if ( $id_site )
  {
