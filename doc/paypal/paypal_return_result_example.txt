@@ -1,0 +1,33 @@
+<?php
+ var_dump($_POST);
+?>
+
+array(26) {
+["txn_type"]=>  string(10) "web_accept"
+["payment_date"]=>  string(25) "03:58:20 Jan 28, 2006 PST"
+["last_name"]=>  string(1) "w"
+["pending_reason"]=>  string(10) "unilateral"
+["item_name"]=>  string(40) "Achat de pixels sur http://pixels.ww7.be" 
+["payment_gross"]=>  string(0) "" 
+["mc_currency"]=>  string(3) "EUR" 
+["business"]=>  string(12) "w@waisse.org" 
+["payment_type"]=>  string(7) "instant" 
+["verify_sign"]=>  string(56) "Ak5Q9bMBsSqswT3-C78OsdQEOGvQATg3ow7pH2KG9YOkhvfZX.xJS07a" 
+["payer_status"]=>  string(10) "unverified" 
+["test_ipn"]=>  string(1) "1" 
+["tax"]=>  string(4) "0.00" 
+["payer_email"]=>  string(15) "acheteur@ww7.be" 
+["txn_id"]=>  string(1) "0" 
+["quantity"]=>  string(1) "1" 
+["first_name"]=>  string(1) "w" 
+["receiver_email"]=>  string(12) "w@waisse.org" 
+["payer_id"]=>  string(13) "YYXLHMQ6US6DN" 
+["item_number"]=>  string(0) "" 
+["payment_status"]=>  string(7) "Pending" 
+["shipping"]=>  string(4) "0.00" 
+["mc_gross"]=>  string(4) "1.00" 
+["custom"]=>  string(10) "Lodnl3LCxP" 
+["charset"]=>  string(12) "windows-1252" 
+["notify_version"]=>  string(3) "2.0" 
+
+

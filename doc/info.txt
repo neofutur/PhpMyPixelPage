@@ -1,0 +1,19 @@
+
+# Contact info submission
+
+url: pixels.ww7.be/
+site_owner: William Waisse
+address1: 
+address2: 
+city: 
+state: Unlisted
+country: France
+postal_code: Unlisted
+phone_number: 0681967610
+display_email: ventes@ww7.be
+site_name: NeoSkills ww7.be gateway
+site_description: ww7.be is the hosting gateway for the free hosting ( and much more ) <a href="http://neoskills.com">NeoSkills project</a>
+
+
+
+

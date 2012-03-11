@@ -1,0 +1,20 @@
+<?php
+
+ $pix_db_host   ="dbhost.domain.tld";
+ $pix_db_user   ="pixeldbuser";
+ $pix_db_passwd ="password";
+ $pix_db_dbname ="phpmypixelpage";
+
+ $pix_relative_path="/";
+ // "/" if root "/directory" if installed in directory ( need the ending / )
+ $site_url="pixels.ww7.be";
+
+ $product_name="Achat de pixels sur $site_url";
+
+ $pixeltraffic_sid="10668";
+
+ //$paypal_action="https://www.paypal.com/cgi-bin/webscr";
+ $paypal_action="https://www.sandbox.paypal.com/cgi-bin/webscr";
+ // use https://www.sandbox.paypal.com/cgi-bin/webscr for training and https://www.paypal.com/cgi-bin/webscr for real
+
+?>

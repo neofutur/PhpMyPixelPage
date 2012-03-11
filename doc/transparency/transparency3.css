@@ -1,0 +1,41 @@
+ 
+
+a.linkopacity img       {
+filter:alpha(opacity=50);
+ -moz-opacity: 0.5; 
+ opacity: 0.5;
+ -khtml-opacity: 0.5;
+ }
+a.linkopacity:hover img {
+filter:alpha(opacity=100);
+-moz-opacity: 1.0;
+opacity: 1.0;
+-khtml-opacity: 1.0;
+}
+
+a.linkopacity75 img       {
+filter:alpha(opacity=75) ;
+-moz-opacity: 0.75;
+opacity: 0.75;
+-khtml-opacity: 0.75; 
+}
+a.linkopacity75:hover img {
+filter:alpha(opacity=100); 
+-moz-opacity: 1.0; 
+opacity: 1.0;
+-khtml-opacity: 1.0; 
+}
+
+.tinytableopacity    {
+FONT-SIZE: small;
+FONT-FAMILY:sans-serif;
+background: transparent;}
+
+.tinytableopacity TD {
+border:1px solid black;
+FONT-SIZE: xx-small;
+FONT-FAMILY: sans-serif;
+filter:alpha(opacity=40);
+-moz-opacity:.40;
+opacity:.40;}
+

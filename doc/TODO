@@ -1,0 +1,13 @@
+badly need an upgrade procedure for next stable release
+admin page ( customize text, config . . . )
+install help ( mysql dump, . . . )
+stats page ( in and out stats, referersn medium clickrate . . .)
+finish paypal integration for direct buy
+reorganize the menu ( Info-Sales-News-Stats)
+iclude a stats module ( data is already in db, visits, clickrate . . . ) 
+
+ interesting ideas : 
+-> http://www.pixelatlas.net/
+-> http://www.projectpenthouse.com
+
+

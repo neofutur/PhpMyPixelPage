@@ -1,0 +1,44 @@
+ This is the changelog for PhpMyPixelPage, the first free ( creative commons nc-by-sa ) code for building your own Pixel Page, see http://freshmeat.net/projects/phpmypixelpage/ for info and download
+
+v 0.45
+ Code Cleanup
+ Nearly no more french text in the code, everything is in the text table and can be customized using phpmyadmin
+ improved paypal integration
+ Fixed problems when installed in a subdirectory
+
+v 0.44 -
+ Next Release sould be Stable branch  0.50 and will need an upgrade procedure
+ Better partner exposure with alt and title for desc and comment on partners.php
+ Improved INSTALL advices
+ admin page unsecure but nearly working, protect this page yourself ( htaccess )
+ Added a table for BlogLines, to easily set up a blog
+ paypal "direct pay" buy pixels on the fly integration now works great
+ fixed 3 pixels diff on index.php
+ Testing transparency testing for background image inclusion
+ Implementing choosing pixels clicking on the grid
+
+v 0.43 - jan 28 02:57:51 CET 2006 
+
+ added pixeltypes prices and nblines for each type
+ added alexa and others on default headers
+ added configuration parameters in config.pinc
+ can now install in a subdirectory ( domain root only before 0.43 )
+ now can detect user click on the table to give him the X,Y position ( will be used to make automatic buying )
+ added paypal_users table for paypal integration with paypal_form.php
+
+V 0.42 - jan 28 13:09:08 CET 2006
+
+ Now have correct meta in HEAD
+ still some problems with accents in db
+ added a adclicks.php page for displaying how many clicks were sent to each site
+ added prices table and special prices
+ improved database for wisits/outclicks 
+
+V 0.41 - nov  4 02:40:05 CET 2005
+
+ Added an admin page for modifying the displayed texts stored in the db ( table texts )
+ Improved future metadata table
+ Added GRTPR ( Google Real Time PageRank ) in menu
+ Improved design
+ Nearly all the displayed text is now in the db and can be customized using phpmyadmin or the new and alpha admin page
+

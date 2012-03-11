@@ -1,0 +1,15 @@
+P.pulltrans {
+color:black;
+width:150px;
+background:white;
+filter:alpha(opacity=50);
+-moz-opacity:.50;
+opacity:.50;
+float:right;
+margin-top:10px;
+margin-bottom:10px;
+margin-left:10px;
+font-size: 28px;
+line-height:26px;  
+text-align: right;
+}

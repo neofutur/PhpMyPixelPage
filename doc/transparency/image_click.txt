@@ -1,0 +1,12 @@
+
+image
+    Crée un bouton de soumission graphique. La valeur de l'attribut src spécifie l'URI de l'image qui va décorer le bouton. Pour des questions d'accessibilité, les auteurs devraient fournir un texte de remplacement pour l'image au moyen de l'attribut alt.
+
+    Quand un dispositif de pointage est employé pour cliquer sur l'image, le formulaire est soumis et les coordonnées du clic sont passées au serveur. La coordonnée « x » se mesure en pixels à partir de la gauche de l'image et la coordonnée « y » en pixels à partir du haut de l'image. Les données soumises comprennent les valeurs nom.x=valeur-de-x et nom.y=valeur-de-y, dans lesquelles le « nom » est la valeur de l'attribut name, et « valeur-de-x » et « valeur-de-y » sont les valeurs des coordonnées « x » et « y » respectivement.
+
+    Si le serveur entreprend diverses actions en fonction de l'endroit cliqué, l'utilisateur d'un navigateur non-graphique sera désavantagé. Pour cette raison, les auteurs devraient considérer ces approches alternatives :
+
+        * Utiliser plusieurs bouton de soumission (chacun avec sa propre image) au lieu d'un seul bouton de soumission graphique. Les auteurs peuvent employer les feuilles de style pour contrôler le positionnement de ces boutons ;
+        * Utiliser une image cliquable côté client en même temps que des scripts.
+
+

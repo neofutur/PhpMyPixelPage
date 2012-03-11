@@ -1,0 +1,250 @@
+body {
+background-color: #000000;
+font-family:Georgia;
+font-size:12px;
+margin-top: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin:0px;
+padding:0px;
+
+}
+
+a,a:visited {
+color: #F9CF6B;
+text-decoration: none}
+
+a:hover {
+color: #DCB965;
+text-decoration: none}
+
+.deepsea, .deepsea TD, .deepsea TH
+{
+top:-3px;
+bottom:0px;
+background-image:url('img/bg13.gif');
+border:none;
+left:-3px;
+width:1400px;
+padding:0;
+margin:0;
+margin-left:0px;
+margin-top:0px;
+margin-bottom:0px;
+text-align:left;
+}
+
+.deepsea2, .deepsea2 TD, .deepsea2 TH
+{
+top:-3px;
+left:-3px;
+width:1400px;
+bottom:0px;
+background-image:url('img/bg11.gif');
+border:none;
+/*border:0px;*/
+padding:0;
+margin:0;
+margin-left:0px;
+margin-top:0px;
+margin-bottom:0px;
+text-align:left;
+}
+
+.deepsea3, .deepsea3 TD, .deepsea3 TH
+{
+top:0px;
+left:10px;
+width:1400px;
+bottom:0px;
+background-image:url('img/bg17.gif');
+/*border:0px;*/
+border:none;
+padding:0;
+margin:0px;
+margin-left:0px;
+margin-top:0px;
+margin-bottom:0px;
+text-align:left;
+}
+
+
+h1 {
+	color: #FFD700;
+	font-size:16pt;
+	font-weight:bold;
+	text-align: center
+	}
+
+h2 {
+	color:#90EE90;
+	font-size:14pt;
+	font-weight:bold;
+	text-decoration:underline;
+	text-align:left;
+	margin-right:5%;
+	margin-left:5%;
+	}
+	
+h3 {color: #90EE90;
+	font-size:13pt;
+	font-weight:bold;
+	text-align: center
+	}
+h4 {color: #90EE90;
+	font-size:11pt;
+	font-weight:bold;
+	text-align: center
+	}
+.flashy {
+        color: #FFD700;
+        font-size:12pt;
+        font-weight:bold;
+        text-align: center
+
+
+}	
+h5 {
+	color : #9966CC;
+	font-size:12pt;
+	margin-left:10%;
+	margin-right:10%;
+	}
+
+h6 {
+        color :	#7CFC00;
+	font-size: 10pt; 
+	margin-left:10%;
+	margin-right:10%;
+	}
+	
+p {
+	margin-left:10%;
+	margin-right:10%;
+        font-size:12pt;
+        color: #FFA500;
+	}
+
+table{
+        top:0px;
+        left:0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+}
+.pixel_banner{
+        position:relative;
+        text-align: center;
+        text-decoration: none
+        background: #778899;
+        border: groove 3px #a0a0a0;
+        padding: 0;
+        font-size: 16px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        overflow: hidden;
+}
+
+.feedburnerFeedBlock{
+ /*background: #778899;*/
+ color: #55CC77;
+}
+.table_settings{
+        border: 2px groove;
+        padding: 5px;
+        margin-top: 5px;
+        margin-left: 0px;
+        border-spacing: 10px;
+}
+
+.table_prices{
+        border: 2px groove;
+        /*background: #aabbaa;*/
+        padding: 5px;
+        margin-top: 5px;
+        margin-left: 0px;
+        border-spacing: 10px;
+}
+.coordonnees {
+color:#BB55CC;
+}
+
+	#foot {
+		color: #FEBE28;
+		font-family: trebuchet ms,Georgia;
+        	font-size: 8pt; 
+		background:#646464;
+		text-align: center;
+		margin-left: auto; 
+		margin-right: auto;
+		}
+		
+	#faq,#achat,#contact,#coll,#news {
+		color:#000000;
+		font-family:Geneva, Arial, Helvetica, sans-serif;
+		font=size: 10pt;
+		background: #7CA287;
+		text-align: justify;
+		}
+       #pixels {
+                position: relative;
+                padding:0px;
+                margin:0px;
+                top:0px;
+                left:0px;
+                width:1400px;
+                height:1400px;
+                border:0px;
+                margin-left: 0px;
+                margin-right: 0px;
+                text-align: left;
+                }
+       #pixels_blue {
+                position: relative;
+                padding:0px;
+                top:0px;
+                left:0px;
+                width:1400px;
+                height:255px;
+                border:0px;
+                margin-left: 0px;
+                margin-right: 0px;
+                text-align: left;
+                }
+       #pixels_green {
+                position: relative;
+                padding:0px;
+                top:0px;
+                left:0px;
+                width:1400px;
+                height:255px;
+                border:0px;
+                margin-left: 0px;
+                margin-right: 0px;
+                text-align: left;
+                }
+       #pixels_pink {
+                position: relative;
+                padding:0px;
+                top:0px;
+                left:0px;
+                width:1400px;
+                height:550px;
+                border:0px;
+                margin-left: 0px;
+                margin-right: 0px;
+                text-align: left;
+                }
+
+        #pixelmenu
+        {
+                border: 3px groove;
+        }
+        #texte {
+                background: #FFFFFF;
+                color: #FEBE28;
+               }

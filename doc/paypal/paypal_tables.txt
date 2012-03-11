@@ -1,0 +1,34 @@
+CREATE TABLE paypal_users (
+
+Id int(11) NOT NULL auto_increment,
+
+idUnique varchar(50) default NULL,
+
+idTransaction varchar(50) default NULL,
+
+nom varchar(50) default NULL,
+
+prenom varchar(50) default NULL,
+
+adresse1 varchar(50) default NULL,
+
+adresse2 varchar(50) default NULL,
+
+cp varchar(50) default NULL,
+
+ville varchar(50) default NULL,
+
+tel varchar(50) default NULL,
+
+email varchar(50) default NULL,
+
+pass varchar(50) default NULL,
+
+date date default '0000-00-00',
+
+autorisation tinyint(4) default NULL,
+
+PRIMARY KEY (Id)
+
+)
+ 
