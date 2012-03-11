@@ -1,64 +1,12 @@
-<?php include 'config.pinc'; ?>
-
-<table>
-<tr><td>
-<script type="text/javascript"><!--
- google_ad_client = "pub-7383532407326303"; google_ad_width = 125; google_ad_height = 125; google_ad_format = "125x125_as"; google_ad_type = "text"; google_ad_channel ="4438979417"; google_color_border = "000000"; google_color_bg = "000000"; google_color_link = "FFFF66"; google_color_url = "CC99FF"; google_color_text = "FF9900";
- //-->
-</script>
-<script type="text/javascript"
-  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-</td>
-<td colspan=3>
- <table style="border:1px solid #aa0033; font-size:small" align=center>
-  <tr> 
-    <td colspan=6 align=center ><a href="http://groups.google.com/group/Publicite-Pixel-Francophones?lnk=li">Rejoignez Publicite Pixel Francophones</a></td>
-  </tr>
-  <tr>
-    <td>
-     <img src="http://groups.google.com/groups/img/groups_medium.gif" height=58 width=150 alt="Google Groups">
-    </td>
-    <form action="http://groups.google.com/group/Publicite-Pixel-Francophones/boxsubscribe">
-    <td> <h4>Email:</h4> <input type=text name=email></td>
-    <td> <input type=submit name="sub" value="Subscribe"> </td>
-    </form>
-  </tr>
-  <tr><td colspan="4" align=center>
-   <a href="http://groups.google.com/group/Publicite-Pixel-Francophones">Browse Archives</a> at <a href="http://groups.google.com/">groups.google.com</a>
-  </td></tr>
- </table>
-</td>
-<td>
-<a href="http://clustrmaps.com/counter/maps.php?url=http://<?php echo $site_url; ?>" id="clustrMapsLink"><img src="http://clustrmaps.com/counter/index2.php?url=<?php echo $site_url; ?>" border=1 alt="Locations of visitors to this page"onError="this.onError=null; this.src='http://www.meetomatic.com/images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://clustrmaps.com/'"><br />
-<table><tr><td><a href=http://www.todoomasters.com target=_blank><img src=http://www.todoomasters.com/logo2.gif border=0 alt="affiliations"></a></td><td><a href="http://www.promopixels.net/topsites/"> <img src="http://www.promopixels.net/topsites/button.php?u=neofutur" alt="PromoPixels.net TopSites" border="0" /></a></td></tr></table>
-</a>
-
-</script>
-</td>
-<td colspan="2">
-<script language='JavaScript' src='http://www.pixeladnet.com/js/pixeladnetbanner.js'></script>
-<script language='JavaScript'>pixeladnetbanner_byid(322,135,110);</script> 
-
-</td>
-<td>
-<script type="text/javascript"> <!--
- google_ad_client = "pub-7383532407326303"; google_ad_width = 125; google_ad_height = 125; google_ad_format = "125x125_as"; google_ad_type = "text"; google_ad_channel ="4438979417"; google_color_border = "000000"; google_color_bg = "000000"; google_color_link = "FFFF66"; google_color_url = "CC99FF"; google_color_text = "FF9900";
- //-->
-</script>
-<script type="text/javascript"
-  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-</td>
-
-</tr>
-</table>
-
-<br />  
+<?php require_once 'config.pinc'; ?>
 
 <?php
 
- $referer= $_SERVER['HTTP_REFERER']; $uri=$_SERVER['REQUEST_URI']; $user_agent=$_SERVER['$HTTP_USER_AGENT']; 
+ //var_dump($_SERVER);
+ if ( isset( $_SERVER['HTTP_REFERER'] )) $referer= mysql_real_escape_string($_SERVER['HTTP_REFERER']); else $referer="";
+ if ( isset( $_SERVER['REQUEST_URI'] )) $uri=mysql_real_escape_string($_SERVER['REQUEST_URI']); else $uri="";
+ if ( isset( $_SERVER['HTTP_USER_AGENT'] )) $user_agent=mysql_real_escape_string($_SERVER['HTTP_USER_AGENT']); else  $user_agent=""; 
+
  if ( $referer )
  {
   $auj_timestamp = mktime( date("H"), date("i"), date("s"), date("m"),date("d"),date("Y")  );
@@ -130,9 +78,4 @@
 
   return $texte;
 }*/
-
-
-
 ?>
-
-

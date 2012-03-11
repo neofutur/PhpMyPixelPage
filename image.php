@@ -13,7 +13,7 @@
 include 'header.php';
 include 'header2.php';
 include 'menu.php';
-include 'fonctions.php';
+require_once 'fonctions.php';
 
 echo "<h3>";
 //--------------------------------------
@@ -35,6 +35,8 @@ $nom_file = $_FILES['fichier']['name'];
 $taille = $_FILES['fichier']['size'];
 $tmp = $_FILES['fichier']['tmp_name'];
 $chemin = $target.$_FILES['fichier']['name'];
+
+$nom ="";$prenom = "";$email = "";$color ="";$adresse1="";$adresse2 ="";$cp = "";$ville = "";$tel = "";$name_site="";$title_site="";$url_site="";$description="";$tel="";
 
 //echo "$nom_file $taille $tmp $chemin<br />";
 
@@ -96,33 +98,36 @@ while($data = mysql_fetch_assoc($res_FORMNAMES))
                 // verifier d'abord ce nom d'image n'est pas deja la ( renommer si besoin avec id_site ?)
 		if (move_uploaded_file ($tmp, $chemin))
 		  {
-		    if( isset ($_POST['nom']) OR isset ($_POST['prenom']) OR isset ($_POST['email']) OR isset ($_POST['adresse1']) OR isset ($_POST['cp']) OR isset ($_POST['ville']) )
-		    {
-			$nom = $_POST['nom']; $prenom = $_POST['prenom']; $email = $_POST['email']; $color = $_POST['color']; $adresse1 = $_POST['adresse1']; $adresse2 = $_POST['adresse2']; $cp = $_POST['cp']; $ville = $_POST['ville']; $tel = $_POST['tel']; $x_pos = $_POST['x_pos']; $y_pos = $_POST['y_pos']; $name_site=$_POST['name_site']; $title_site=$_POST['title_site']; $url_site=$_POST['url_site']; $description=$_POST['description'];
+			if ( isset ($_POST['nom']))        $nom = mysql_real_escape_string($_POST['nom']);
+			if ( isset ($_POST['prenom'] ))    $prenom = mysql_real_escape_string($_POST['prenom']);
+			if ( isset ($_POST['email']))      $email = mysql_real_escape_string($_POST['email']);
+			if ( isset ($_POST['adresse1']))   $adresse1 = mysql_real_escape_string($_POST['adresse1']);
+			if ( isset ($_POST['adresse2']))   $adresse2 = mysql_real_escape_string($_POST['adresse2']);
+			if ( isset ($_POST['cp']))         $cp = mysql_real_escape_string($_POST['cp']);
+			if ( isset ($_POST['ville']))      $ville = mysql_real_escape_string($_POST['ville']);
+			if ( isset ($_POST['tel']))        $tel = mysql_real_escape_string($_POST['tel']);
+			if ( isset ($_POST['name_site']))  $name_site=mysql_real_escape_string($_POST['name_site']);
+			if ( isset ($_POST['title_site'])) $title_site=mysql_real_escape_string($_POST['title_site']);
+			if ( isset ($_POST['url_site']))   $url_site=mysql_real_escape_string($_POST['url_site']);
+			if ( isset ($_POST['description'])) $description=mysql_real_escape_string($_POST['description']);
+			$x_pos = $_POST['x_pos']; $y_pos = $_POST['y_pos'];
+			$color = mysql_real_escape_string($_POST['color']);
                         if ( $color="blue" ) {$price_id=1 ;  }
                         if ( $color="green" ) {$price_id=2 ;  }
                         if ( $color="pink" ) {$price_id=3 ;  }
-		    }
-		    else
-		    {
-			$nom = ''; $prenom = ''; $email = ''; $adresse1 = ''; $cp = ''; $ville = ''; $tel = ''; $name_site =''; $title_site=''; $url_site=''; $email=''; $description='';
-		    }
-		    if (empty ($nom) OR empty ($prenom) OR empty ($email) OR
-			empty ($adresse1) OR empty ($cp) OR
-			empty ($ville) )
-		    {
-			echo $myform['IMAGE_FIELDEMPTY'];
-		    }
 		    // Si upload OK alors on affiche le message de réussite et on vérifie que tout les autres champs sont remplis
-		    else
-		    {
 			echo '<p>'.$myform['IMAGE_ACCEPTED'].'</p>';
+			if ( isset($myform['IMAGEFIELD_FILE'] ))
 			echo '<ul><li>'.$myform['IMAGEFIELD_FILE'].' : '.$_FILES['fichier']['name'].
 			  '</li>';
+			if ( isset($myform['IMAGEFIELD_SIZE'] ))
 			echo '<li>'.$myform['IMAGEFIELD_SIZE'].' : '.$_FILES['fichier']['size'].
 			  ' Octets</li>';
+			if ( isset($myform['IMAGEFIELD_WIDTH'] ))
 			echo '<li>'.$myform['IMAGEFIELD_WIDTH'].' : '.$x_size.' px</li>';
+			if ( isset($myform['IMAGEFIELD_HEIGHT'] ))
 			echo '<li>'.$myform['IMAGEFIELD_HEIGHT'].' : '.$y_size.' px</li>';
+			if ( isset($myform['IMAGEFIELD_PIXELSIZE'] ))
                         echo '<li>'.$myform['IMAGEFIELD_PIXELSIZE'].' :'.$total_size.' pixels</li>';
 			echo '<li>'.$myform['IMAGEFIELD_NAME'].' : '.$nom.'</li>';
 			echo '<li>'.$myform['IMAGEFIELD_SURNAME'].' : '.$prenom.'</li>';
@@ -141,6 +146,7 @@ while($data = mysql_fetch_assoc($res_FORMNAMES))
 			$res_price = mysql_fetch_array ($req_price);
 			$price = $res_price['ppp_price'];
 			$prix = $price * $infos_img[0] * $infos_img[1];
+			if ( isset($myform['IMAGEFIELD_TOTALPRICE'] ))
 			echo "<h2>".$myform['IMAGEFIELD_TOTALPRICE']."Le prix total pour cette image est de seulement :<blink> $prix </blink>EUR pour 5 ans d'affichage garanti </h2>";
 			$idUnique = idUnique (10);
                         $pass="";
@@ -190,7 +196,6 @@ $buy_button_text=$myform['IMAGE_ACCESS_BUY']. $prix. $myform['IMAGE_BUY_TOTAL'].
 // Sinon on affiche une erreur pour le champ vide
 		echo '<p>Le champ du formulaire est vide !</p>';
 	      }
- }
 ?>
 </h3>
 <?php include 'footer.php'; ?>

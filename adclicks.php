@@ -60,7 +60,7 @@ while($data = mysql_fetch_assoc($req))
  $nom_site = $data['name_site'] ; $xpos_site = $data['x_pos'] ; $ypos_site = $data['y_pos'] ;
  $xsize_site = $data['x_size'] ; $ysize_site = $data['y_size'] ;
 
- $requete_count_clicks="SELECT COUNT(*) FROM `out` WHERE site_id_out =".$id_site;
+ $requete_count_clicks="SELECT COUNT(*) FROM `outvisit` WHERE site_id_out =".$id_site;
  $req2 = mysql_query($requete_count_clicks) or die('Erreur SQL1 !<br>'.$sql.'<br>'.mysql_error());
  $data_count_clicks= mysql_fetch_assoc($req2);
  $nb_clicks=$data_count_clicks['COUNT(*)'];

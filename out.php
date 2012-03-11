@@ -1,7 +1,7 @@
 <?php
- include 'config.pinc';
+ require_once 'header.php';
 
- $id_site=$_GET['site'];
+ $id_site=mysql_real_escape_string($_GET['site']);
 
  if ( $id_site )
  {
@@ -14,9 +14,9 @@
  $auj_timestamp = mktime( 1,1,1,date("m"),date("d"),date("Y")  );
  $date_aujourdhui = strftime( "%Y-%m-%d", $auj_timestamp ) ;
  
- $requete_hit="INSERT into out ( site_id_out, datetime_out ) values ( $id_site, '$date_aujourdhui' )";
+ $requete_hit="INSERT INTO outvisit(site_id_out, datetime_out ) values( $id_site, '$date_aujourdhui' )";
  //echo $requete_hit;
- $req = mysql_query($requete_hit) or die('Erreur SQL2 !<br>'.$sql.'<br>'.mysql_error());
+ $req = mysql_query($requete_hit) or die('Erreur SQL2 !<br>'.$requete_hit.'<br>'.mysql_error());
   header("Location: $url_site");
  }
 ?>

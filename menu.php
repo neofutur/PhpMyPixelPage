@@ -27,8 +27,7 @@ while($data = mysql_fetch_assoc($req))
 <div class="flashy"><a href="<?php echo $pix_relative_path; ?>partners.php"><?php echo $title_partners ?></a></div></td><td>
 <div class="flashy"><a href="<?php echo $pix_relative_path; ?>faq.php"><?php echo $title_faq ?></a></div> </td><td>
 <div class="flashy"><a href="<?php echo $pix_relative_path; ?>contact.php"><?php echo $title_contact ?></a></div> </td><td>
-<div class="flashy"><a href="http://rankit.free.fr/site.php?<?php echo $site_url; ?>" target="_new"><?php echo $title_grtpr ?></a></div></td><td>
-<a href="http://www.yagoort.org/googledance.html?domain=<?php echo $site_url; ?>" target="_blank" title="GPTR"><img src="http://www.yagoort.org/pagerank.php?domain=<?php echo $site_url; ?>&rtcolor=AABBDD&gdcolor=CCAACC&bgcolor=BBBB88&textcolor=000000&width=35&height=16&type=RKPR"></a>
+<a href="http://cooltext.com" target="_top"><img src="http://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
 </td>
 </tr></table>
 

@@ -9,24 +9,35 @@
 
 4- create the mysql user and password and put them in file : config.pinc
 
-5- config also need the url and relative path ( / if on root or /directory/ if installed in directory ( ending / is needed )
+5- config also need the url and relative path ( / if on root or /directory/ if installed
+ in directory ( ending / is needed )
  ( relative path should work but you'd better install pmpp at the root of your vhost )
 
 6- put the data ( mysql user, pass, database, url ) in the config.pinc file
 
 7 verify the permissions (chown -R / chmod -R ) pmpp need to write only in /sites
 
- until now if you want to customize texts (default is french) you have to use phpmyadmin or webmin to modify the content of the table text, adminpage is not secure and should be removed or protected with a htaccess to add a site you also have to use phpmyadmin and add a record in table "site" to add a partner,  you also have to use phpmyadmin and add a record in table  "partners" to modify the texts edit them in the database using phpmyadmin, most of them are in the table text,but yes some are still in the php pages ;( help us translate.
+ until now if you want to customize texts (default is french) you have to use phpmyadmin or webmin
+ to modify the content of the table text, adminpage is not secure and should be removed or protected
+ with a htaccess to add a site you also have to use phpmyadmin and add a record in table "site" to 
+ add a partner,  you also have to use phpmyadmin and add a record in table  "partners" to modify the
+ texts edit them in the database using phpmyadmin, most of them are in the table text,but yes some 
+ are still in the php pages ;( help us translate.
 
- please keep a link to :-> PhpMyPixelPage is free for you help others to find it ( sites/PhpMyPixPage_80x30_animated.gif -> http://freshmeat.net/projects/phpmypixelpage/)-> Pixels.ww7.be ( dont have to , but if you want to support me, thanks ;)
+ please keep a link to us :-> PhpMyPixelPage is free for you, help others to find it 
+ ( sites/PhpMyPixPage_80x30_animated.gif -> http://freshmeat.net/projects/phpmypixelpage/)
+ -> pixels.bitcoin.gw.gd ( you dont have to , but if you want to support me, thanks ;)
 
- ( sites/paris_pixels_80x10.png -> http://parispixels.ww7.be ) Anyway, contact me I'll soon build an online directory of all the PhpMyPixelPages (ventes@ww7.be) Please help giving translations to PhpMyPixelPage. Have Fun Pixel Advertisement                                                                                                                     
- to add or remove a site yourself you also have to use phpmyadmin and add a record in table "site" ( or use the paypal sandbox to buy yourself ), but when people buy a space, the site is automagically added.
+ Anyway, contact me I'll soon build an online directory of all the PhpMyPixelPages (ventes@ww7.be)
+ Please help giving translations to PhpMyPixelPage. Have Fun Pixel Advertisement
+ to add or remove a site yourself you also have to use phpmyadmin and add a record in table "site"
+ ( or use the paypal sandbox to buy yourself ), but when people buy a space, the site is automagically added.
 
  to add or remove a partner,  you also have to use phpmyadmin and add a record in table  "partners".
 
 
- to modify the texts edit them in the database using phpmyadmin, most of them are in the table text,but yes some are still in the php pages ;( help us translate.
+ to modify the texts edit them in the database using phpmyadmin, most of them are in the table text,but
+ yes some are still in the php pages ;( help us translate.
 
  please keep a link to :
 -> PhpMyPixelPage is free for you help others to find it ( sites/PhpMyPixPage_80x30_animated.gif -> http://freshmeat.net/projects/phpmypixelpage/ )

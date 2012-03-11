@@ -100,10 +100,10 @@ CREATE TABLE `metadata` (
 -- --------------------------------------------------------
 
 -- 
--- Table structure for table `out`
+-- Table structure for table `outvisit
 -- 
 
-CREATE TABLE `out` (
+CREATE TABLE `outvisit` (
   `id_out` int(11) NOT NULL auto_increment,
   `site_id_out` int(11) NOT NULL default '0',
   `datetime_out` datetime NOT NULL default '0000-00-00 00:00:00',

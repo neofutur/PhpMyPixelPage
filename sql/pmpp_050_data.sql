@@ -139,10 +139,10 @@ INSERT INTO `metadata` VALUES (6, 'PMPP_version', '0.44', 'PhpMyPixelPage curren
 -- --------------------------------------------------------
 
 -- 
--- Table structure for table `out`
+-- Table structure for table `outvisit`
 -- 
 
-CREATE TABLE `out` (
+CREATE TABLE `outvisit` (
   `id_out` int(11) NOT NULL auto_increment,
   `site_id_out` int(11) NOT NULL default '0',
   `datetime_out` datetime NOT NULL default '0000-00-00 00:00:00',
@@ -152,10 +152,10 @@ CREATE TABLE `out` (
 ) TYPE=MyISAM AUTO_INCREMENT=2229 ;
 
 -- 
--- Dumping data for table `out`
+-- Dumping data for table `outvisit
 -- 
 
-INSERT INTO `out` VALUES (1, 3, '2005-11-01 00:00:00', NULL);
+INSERT INTO `outvisit` VALUES (1, 3, '2005-11-01 00:00:00', NULL);
 
 -- --------------------------------------------------------
 
